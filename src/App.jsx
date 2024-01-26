@@ -9,11 +9,15 @@ const IMAGES = [car1, car2, car3, car4, car5];
 
 export default function App() {
   return (
-    <div className="max-w-2xl w-full aspect-[4/3] mx-auto my-0">
+    <div
+      style={{
+        maxWidth: "680px",
+        width: "100%",
+        aspectRatio: "10 / 6",
+        margin: "0 auto",
+      }}
+    >
       <ImageSlider imageUrls={IMAGES} />
     </div>
   );
 }
-
-// className="block absolute top-0 bottom-0 left-0 p-4 cursor-pointer hover:bg-black opacity-20"
-// className="block absolute top-0 bottom-0 right-0 p-4 cursor-pointer hover:bg-black opacity-20"
